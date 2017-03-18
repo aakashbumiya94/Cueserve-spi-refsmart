@@ -19,5 +19,16 @@
       "registerLabel": "Register",
       "gotoSigninLabel": "Sign In"
     }
+  },
+  "aboutView": {
+    "title": "About",
+    "aboutViewModel": {
+      "appName": "refSMART",
+      "appVersion": "Version 1",
+      "appDescription": "App description",
+      "contactLabel": "Contact us",
+      "facebookLabel": "Like us on Facebook",
+      "twitterLabel": "Follow us on Twitter"
+    }
   }
 }

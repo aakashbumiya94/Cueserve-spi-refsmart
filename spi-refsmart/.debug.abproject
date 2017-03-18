@@ -1,5 +1,6 @@
 {
   "CorePlugins": [
+    "com.paypal.cordova.mobilesdk@3.1.25.1",
     "com.telerik.plugin.telerikanalytics@3.4.1",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
