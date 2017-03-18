@@ -5,6 +5,19 @@
     "qrCodeScan": "Scan"
   },
   "home": {
-    "title": "Home View"
+    "title": "refSMART Sign-In",
+    "homeModel": {
+      "logoutLabel": "Sign Out",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "signinLabel": "Sign In",
+      "gotoRegisterLabel": "Register",
+      "remembermeLabel": "Remember Me",
+      "registerEmailLabel": "Email",
+      "registerPasswordLabel": "Password",
+      "registerNameLabel": "Name",
+      "registerLabel": "Register",
+      "gotoSigninLabel": "Sign In"
+    }
   }
 }

@@ -14,6 +14,8 @@
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script src="dataProviders/backendServices.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
@@ -26,7 +28,7 @@
         </header>
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
+                <a href="components/home/view.html?logout=true" data-position="end" data-icon="action"><span class="navigation-link-text" data-bind="text: strings.home.homeModel.logoutLabel"></span></a>
             </div>
             <div id="navigation-container-more" style="display: none">
             </div>

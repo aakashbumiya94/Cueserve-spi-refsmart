@@ -4,13 +4,43 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
-      "title": "Home View",
-      "addToNavigation": true,
-      "icon": "home"
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "homeModel",
+          "dataProvider": "backendServices",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In",
+          "enableLogout": true,
+          "logoutLabel": "Sign Out",
+          "enableRememberme": true,
+          "remembermeLabel": "Remember Me",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home"
+        }
+      ],
+      "title": "refSMART Sign-In",
+      "addToNavigation": false
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "backendServices",
+      "source": "everlive",
+      "everliveKey": "79a8hlapkzbz4c2b",
+      "offlineStorage": false,
+      "title": "Backend Services"
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",
