@@ -1,0 +1,32 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.viewMessages" data-show="app.viewMessages.onShow" data-after-show="app.viewMessages.afterShow" id="viewMessagesScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.viewMessages.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_viewMessages -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewMessages -->
+    <ul class="masterDetailView" data-role="listview" data-auto-bind="false" data-style="inset" data-template="viewMessagesModelTemplate" data-bind="source: viewMessagesModel.dataSource, events: {click: viewMessagesModel.itemClick}" data-pull-to-refresh="false"
+    data-endless-scroll="false">
+    </ul>
+
+
+    <!-- START_CUSTOM_CODE_viewMessagesModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewMessagesModel -->
+    <script type="text/x-kendo-template" id="viewMessagesModelTemplate">
+        <div class="image-with-text">
+            # data = app.viewMessages.viewMessagesModel.fixHierarchicalData(data); #
+
+            <h3>#: data['DisplayName'] #</h3>
+
+        </div>
+    </script>
+</div>

@@ -1,0 +1,31 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.viewHelp" data-show="app.viewHelp.onShow" data-after-show="app.viewHelp.afterShow" id="viewHelpScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.viewHelp.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_viewHelp -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewHelp -->
+    <ul class="masterDetailView" data-role="listview" data-auto-bind="false" data-style="inset" data-template="viewHelpModelTemplate" data-bind="source: viewHelpModel.dataSource, events: {click: viewHelpModel.itemClick}" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+
+
+    <!-- START_CUSTOM_CODE_viewHelpModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewHelpModel -->
+    <script type="text/x-kendo-template" id="viewHelpModelTemplate">
+        <div class="image-with-text">
+            # data = app.viewHelp.viewHelpModel.fixHierarchicalData(data); #
+
+            <h3>#: data['DisplayName'] #</h3>
+
+        </div>
+    </script>
+</div>

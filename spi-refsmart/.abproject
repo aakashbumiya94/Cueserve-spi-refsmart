@@ -41,5 +41,12 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
-  ]
+  ],
+  "CordovaPluginVariables": {
+    "com.telerik.feedback": {
+      "API_KEY": "79a8hlapkzbz4c2b",
+      "API_URL": "https://platform.telerik.com/feedback/api/v1",
+      "ENABLE_SHAKE": "True"
+    }
+  }
 }

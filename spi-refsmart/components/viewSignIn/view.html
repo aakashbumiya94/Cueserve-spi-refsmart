@@ -1,0 +1,79 @@
+<div data-role="view" data-title="View" data-layout="main-nonav" data-model="app.viewSignIn" data-show="app.viewSignIn.onShow" data-after-show="app.viewSignIn.afterShow" id="viewSignInScreen" class="screen">
+    <div class="signin-view screen__content screen__content--signin">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label><span data-bind="text: strings.viewSignIn.viewSignInModel.emailLabel"></span>
+                        <input type="email" data-bind="value: viewSignInModel.email" required autofocus>
+                    </label>
+                </li>
+                <li>
+                    <label><span data-bind="text: strings.viewSignIn.viewSignInModel.passwordLabel"></span>
+                        <input type="password" data-bind="value: viewSignInModel.password" required>
+                    </label>
+                </li>
+                <li>
+                    <label><span data-bind="text: strings.viewSignIn.viewSignInModel.remembermeLabel"></span>
+                        <input type="checkbox" data-bind="checked: viewSignInModel.rememberme">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group button-group-vertical">
+                <a data-role="button" class="primary" data-bind="events: { click: viewSignInModel.signin }, buttonText: strings.viewSignIn.viewSignInModel.signinLabel"></a>
+
+                <a data-role="button" data-bind="events: { click: viewSignInModel.toggleView }, buttonText: strings.viewSignIn.viewSignInModel.gotoRegisterLabel"></a>
+
+            </div>
+
+            <span class="status" data-bind="text: viewSignInModel.errorMessage"></span>
+        </form>
+    </div>
+    <div class="signup-view screen__content screen__content--signup" style="display:none;">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label><span data-bind="text: strings.viewSignIn.viewSignInModel.registerEmailLabel"></span>
+                        <input type="email" data-bind="value: viewSignInModel.email" required>
+                    </label>
+                </li>
+                <li>
+                    <label><span data-bind="text: strings.viewSignIn.viewSignInModel.registerPasswordLabel"></span>
+                        <input type="password" data-bind="value: viewSignInModel.password">
+                    </label>
+                </li>
+                <li>
+                    <label><span data-bind="text: strings.viewSignIn.viewSignInModel.registerNameLabel"></span>
+                        <input type="text" data-bind="value: viewSignInModel.displayName">
+                    </label>
+                </li>
+            </ul>
+            <div class="button-group button-group-vertical">
+                <a class="primary" data-role="button" data-bind="events: { click: viewSignInModel.register }, buttonText: strings.viewSignIn.viewSignInModel.registerLabel"></a>
+                <a data-role="button" data-bind="events: { click: viewSignInModel.toggleView }, buttonText: strings.viewSignIn.viewSignInModel.gotoSigninLabel"></a>
+            </div>
+
+            <span class="status" data-bind="text: viewSignInModel.errorMessage"></span>
+        </form>
+    </div>
+    <div class="offline" align="center" style="display:none;">
+        You are currently offline. Before using this app in offline mode you must initialize it while you are online
+    </div>
+    <!-- START_CUSTOM_CODE_viewSignInModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewSignInModel -->
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.viewSignIn.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_viewSignIn -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewSignIn -->
+</div>

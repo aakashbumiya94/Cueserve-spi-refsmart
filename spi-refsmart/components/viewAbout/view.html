@@ -1,0 +1,37 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.viewAbout" data-show="app.viewAbout.onShow" data-after-show="app.viewAbout.afterShow" id="viewAboutScreen" class="screen">
+    <div class="about-view screen__content screen__content--about" data-bind="invisible:error">
+        <div class="icon-group">
+
+
+            <div class="app-details">
+                <h2 data-bind="text: strings.viewAbout.viewAboutModel.appName"></h2>
+                <h4 data-bind="text: strings.viewAbout.viewAboutModel.appVersion"></h4>
+            </div>
+        </div>
+
+        <p data-bind="text: strings.viewAbout.viewAboutModel.appDescription"></p>
+
+        <div class="button-group button-group-vertical">
+            <a data-role="button" data-rel="external" href="mailto:support@example.com" data-bind="buttonText: strings.viewAbout.viewAboutModel.contactLabel"></a>
+            <a data-role="button" data-rel="external" href="#" onclick="app.openLink('https://www.facebook.com/Telerik');" data-bind="buttonText: strings.viewAbout.viewAboutModel.facebookLabel"></a>
+            <a data-role="button" data-rel="external" href="#" onclick="app.openLink('https://twitter.com/telerik');" data-bind="buttonText: strings.viewAbout.viewAboutModel.twitterLabel"></a>
+        </div>
+        <!-- START_CUSTOM_CODE_viewAboutModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_viewAboutModel -->
+    </div>
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.viewAbout.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_viewAbout -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewAbout -->
+</div>

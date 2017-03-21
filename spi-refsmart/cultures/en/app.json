@@ -4,10 +4,9 @@
     "showMoreTitle": "Show More",
     "qrCodeScan": "Scan"
   },
-  "home": {
-    "title": "refSMART Sign-In",
-    "homeModel": {
-      "logoutLabel": "Sign Out",
+  "viewSignIn": {
+    "title": "Sign In",
+    "viewSignInModel": {
       "emailLabel": "Email",
       "passwordLabel": "Password",
       "signinLabel": "Sign In",
@@ -20,10 +19,62 @@
       "gotoSigninLabel": "Sign In"
     }
   },
-  "aboutView": {
+  "viewMyMatches": {
+    "title": "My matches",
+    "viewMyMatchesModel": {
+      "detailHeaderFieldValue": "Detail"
+    }
+  },
+  "viewBrowse": {
+    "title": "Browse matches",
+    "viewBrowseModel": {
+      "detailHeaderFieldValue": "Detail"
+    }
+  },
+  "viewPost": {
+    "title": "Post a match",
+    "viewPostModel": {
+      "submitButton": "Confirm",
+      "cancelButton": "Cancel"
+    }
+  },
+  "viewMessages": {
+    "title": "Messages",
+    "viewMessagesModel": {
+      "detailHeaderFieldValue": "Detail"
+    }
+  },
+  "viewProfile": {
+    "title": "Profile"
+  },
+  "viewPayment": {
+    "title": "Payment methods",
+    "viewPaymentModel": {
+      "detailHeaderFieldValue": "Detail"
+    }
+  },
+  "viewTransactions": {
+    "title": "Transactions",
+    "viewTransactionsModel": {
+      "detailHeaderFieldValue": "Detail"
+    }
+  },
+  "viewSettings": {
+    "title": "Settings",
+    "viewSettingsModel": {
+      "detailHeaderFieldValue": "Detail"
+    }
+  },
+  "viewHelp": {
+    "title": "Help",
+    "viewHelpModel": {
+      "detailHeaderFieldValue": "Detail"
+    }
+  },
+  "viewAbout": {
     "title": "About",
-    "aboutViewModel": {
-      "appName": "refSMART",
+    "viewAboutModel": {
+      "appName": "My App",
       "appVersion": "Version 1",
       "appDescription": "App description",
       "contactLabel": "Contact us",

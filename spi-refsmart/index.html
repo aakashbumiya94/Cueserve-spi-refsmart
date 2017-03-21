@@ -19,8 +19,17 @@
 </head>
 
 <body id="kendoUiMobileApp">
-    <script src="components/aboutView/index.js"></script>
-    <script src="components/home/index.js"></script>
+    <script src="components/viewAbout/index.js"></script>
+    <script src="components/viewHelp/index.js"></script>
+    <script src="components/viewSettings/index.js"></script>
+    <script src="components/viewTransactions/index.js"></script>
+    <script src="components/viewPayment/index.js"></script>
+    <script src="components/viewProfile/index.js"></script>
+    <script src="components/viewMessages/index.js"></script>
+    <script src="components/viewPost/index.js"></script>
+    <script src="components/viewBrowse/index.js"></script>
+    <script src="components/viewMyMatches/index.js"></script>
+    <script src="components/viewSignIn/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
@@ -29,11 +38,22 @@
         </header>
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
+                <a href="components/viewMyMatches/view.html" data-icon="organize"><span class="navigation-link-text" data-bind="text: strings.viewMyMatches.title"></span></a>
+                <a href="components/viewBrowse/view.html" data-icon="search"><span class="navigation-link-text" data-bind="text: strings.viewBrowse.title"></span></a>
+                <a href="components/viewPost/view.html" data-icon="bookmarks"><span class="navigation-link-text" data-bind="text: strings.viewPost.title"></span></a>
+                <a href="components/viewMessages/view.html" data-icon="organize"><span class="navigation-link-text" data-bind="text: strings.viewMessages.title"></span></a>
 
-                <a href="components/aboutView/view.html" data-icon="info"><span class="navigation-link-text" data-bind="text: strings.aboutView.title"></span></a>
-                <a href="components/home/view.html?logout=true" data-position="end" data-icon="action"><span class="navigation-link-text" data-bind="text: strings.home.homeModel.logoutLabel"></span></a>
+
+                <a href="#navigation-show-more-view" data-more="true" data-icon="more"><span class="navigation-link-text" data-bind="text: strings._app.navigationMore"></span></a>
+
+
             </div>
             <div id="navigation-container-more" style="display: none">
+                <a href="components/viewProfile/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.viewProfile.title"></span></a><a href="components/viewPayment/view.html" data-icon="organize"><span class="navigation-link-text" data-bind="text: strings.viewPayment.title"></span></a>
+                <a href="components/viewTransactions/view.html" data-icon="organize"><span class="navigation-link-text" data-bind="text: strings.viewTransactions.title"></span></a>
+                <a href="components/viewSettings/view.html" data-icon="organize"><span class="navigation-link-text" data-bind="text: strings.viewSettings.title"></span></a><a href="components/viewHelp/view.html" data-icon="organize"><span class="navigation-link-text" data-bind="text: strings.viewHelp.title"></span></a>
+                <a
+                href="components/viewAbout/view.html" data-icon="info"><span class="navigation-link-text" data-bind="text: strings.viewAbout.title"></span></a>
             </div>
         </footer>
     </div>

@@ -1,0 +1,32 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.viewMyMatches" data-show="app.viewMyMatches.onShow" data-after-show="app.viewMyMatches.afterShow" id="viewMyMatchesScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.viewMyMatches.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_viewMyMatches -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewMyMatches -->
+    <ul class="masterDetailView" data-role="listview" data-auto-bind="false" data-style="inset" data-template="viewMyMatchesModelTemplate" data-bind="source: viewMyMatchesModel.dataSource, events: {click: viewMyMatchesModel.itemClick}" data-pull-to-refresh="false"
+    data-endless-scroll="false">
+    </ul>
+
+
+    <!-- START_CUSTOM_CODE_viewMyMatchesModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewMyMatchesModel -->
+    <script type="text/x-kendo-template" id="viewMyMatchesModelTemplate">
+        <div class="image-with-text">
+            # data = app.viewMyMatches.viewMyMatchesModel.fixHierarchicalData(data); #
+
+            <h3>#: data['DisplayName'] #</h3>
+
+        </div>
+    </script>
+</div>

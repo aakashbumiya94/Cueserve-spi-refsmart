@@ -1,0 +1,32 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.viewSettings" data-show="app.viewSettings.onShow" data-after-show="app.viewSettings.afterShow" id="viewSettingsScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.viewSettings.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_viewSettings -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewSettings -->
+    <ul class="masterDetailView" data-role="listview" data-auto-bind="false" data-style="inset" data-template="viewSettingsModelTemplate" data-bind="source: viewSettingsModel.dataSource, events: {click: viewSettingsModel.itemClick}" data-pull-to-refresh="false"
+    data-endless-scroll="false">
+    </ul>
+
+
+    <!-- START_CUSTOM_CODE_viewSettingsModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_viewSettingsModel -->
+    <script type="text/x-kendo-template" id="viewSettingsModelTemplate">
+        <div class="image-with-text">
+            # data = app.viewSettings.viewSettingsModel.fixHierarchicalData(data); #
+
+            <h3>#: data['DisplayName'] #</h3>
+
+        </div>
+    </script>
+</div>

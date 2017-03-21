@@ -3,11 +3,11 @@
   "views": [
     {
       "type": "kendo-ui-mobile:view",
-      "name": "home",
+      "name": "viewSignIn",
       "components": [
         {
           "type": "kendo-ui-mobile:authentication",
-          "name": "homeModel",
+          "name": "viewSignInModel",
           "dataProvider": "backendServices",
           "enableRegistration": true,
           "gotoRegisterLabel": "Register",
@@ -15,29 +15,270 @@
           "registerPasswordLabel": "Password",
           "registerNameLabel": "Name",
           "registerLabel": "Register",
-          "registerRedirect": "aboutView",
+          "registerRedirect": "viewAbout",
           "gotoSigninLabel": "Sign In",
-          "enableLogout": true,
-          "logoutLabel": "Sign Out",
+          "enableLogout": false,
           "enableRememberme": true,
           "remembermeLabel": "Remember Me",
           "emailLabel": "Email",
           "passwordLabel": "Password",
           "signinLabel": "Sign In",
-          "signinRedirect": "aboutView"
+          "signinRedirect": "viewAbout"
         }
       ],
-      "title": "refSMART Sign-In",
+      "title": "Sign In",
       "addToNavigation": false
     },
     {
       "type": "kendo-ui-mobile:view",
-      "name": "aboutView",
+      "name": "viewMyMatches",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "viewMyMatchesModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail"
+        }
+      ],
+      "title": "My matches",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewBrowse",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "viewBrowseModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail"
+        }
+      ],
+      "title": "Browse matches",
+      "addToNavigation": true,
+      "icon": "search"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewPost",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [],
+          "name": "viewPostModel",
+          "enableDataBinding": false,
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Post a match",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewMessages",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "viewMessagesModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail"
+        }
+      ],
+      "title": "Messages",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewProfile",
+      "components": [],
+      "title": "Profile",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewPayment",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "viewPaymentModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail"
+        }
+      ],
+      "title": "Payment methods",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewTransactions",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "viewTransactionsModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail"
+        }
+      ],
+      "title": "Transactions",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewSettings",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "viewSettingsModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail"
+        }
+      ],
+      "title": "Settings",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewHelp",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "viewHelpModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail"
+        }
+      ],
+      "title": "Help",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "viewAbout",
       "components": [
         {
           "type": "kendo-ui-mobile:about",
-          "name": "aboutViewModel",
-          "appName": "refSMART",
+          "name": "viewAboutModel",
+          "appName": "My App",
           "appVersion": "Version 1",
           "appDescription": "App description",
           "contactButton": true,
@@ -68,7 +309,7 @@
   ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
-  "view": "home",
+  "view": "viewSignIn",
   "transition": "slide",
   "showMoreTab": true,
   "skin": "nova",

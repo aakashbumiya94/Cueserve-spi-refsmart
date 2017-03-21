@@ -1,22 +1,22 @@
 'use strict';
 
-app.aboutView = kendo.observable({
+app.viewAbout = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
-app.localization.registerView('aboutView');
+app.localization.registerView('viewAbout');
 
-// START_CUSTOM_CODE_aboutView
+// START_CUSTOM_CODE_viewAbout
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_aboutView
+// END_CUSTOM_CODE_viewAbout
 (function(parent) {
-    var aboutViewModel = kendo.observable({});
+    var viewAboutModel = kendo.observable({});
 
-    parent.set('aboutViewModel', aboutViewModel);
-})(app.aboutView);
+    parent.set('viewAboutModel', viewAboutModel);
+})(app.viewAbout);
 
-// START_CUSTOM_CODE_aboutViewModel
+// START_CUSTOM_CODE_viewAboutModel
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_aboutViewModel
+// END_CUSTOM_CODE_viewAboutModel
